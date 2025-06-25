@@ -28,7 +28,7 @@ This projecct is part of the Programming in Information Work, developed from Pyt
     $ git clone https://github.com/A5hisa/DonationHub-Python
 ```
 
-2. Set Up Gmail User (app_gmail, app_pass) in Main.py
+2. Set Up Gmail User in .env (Gmail, Password)
 
 ## Feedback
 

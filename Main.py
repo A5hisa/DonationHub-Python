@@ -13,7 +13,9 @@ from tkinter import *
 from tkinter import messagebox, ttk
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # Font
 FONT_TITLE = ("Arial", 18, "bold")
@@ -154,8 +156,8 @@ def get_all_data(ID):
 # Sent email to Donator
 def sent_email(id, contact):
     # set up gmail
-    app_gmail = ""
-    app_pass = ""
+    app_gmail = os.environ.get("Gmail")
+    app_pass = os.environ.get("Password")
 
     # format email
     data = get_all_data(id)
